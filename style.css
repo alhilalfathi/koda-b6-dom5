@@ -38,7 +38,7 @@ nav h1 {
 }
 }
 
-@media (min-width: 768px) {
+@media ((min-width: 768px) and (max-width: 1024px) ) {
 nav ul {
     list-style-type: none;
     background-color: azure;
