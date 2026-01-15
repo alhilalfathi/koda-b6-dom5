@@ -16,6 +16,13 @@ nav {
     margin-right: 2.5%;
     margin-top: 10px;
 }
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -128,13 +135,21 @@ nav {
     flex-direction: column;
     text-align: center;
 }
+nav>div>button {
+    position: absolute;
+    right: 7%;
+    height: 30px;
+    width: 30px;
+}
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     width: 93%;
     padding: 10px;
     flex-direction: column;
-    
+}
+nav ul.visible {
+    display: flex;
 }
 nav ul li {
     padding: 10px;
@@ -215,6 +230,8 @@ footer p {
 }
 }
 
-/* @media ((min-width: 768px) and (max-width: 1024px) ) {
-
-} */
+@media ((min-width: 768px) ) {
+    nav>div>button {
+    display: none;
+}
+}
