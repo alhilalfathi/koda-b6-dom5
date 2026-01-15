@@ -12,7 +12,11 @@
 <body>
     <header>
         <nav>
-            <h1>PORTO</h1>
+            <div>
+                <h1>PORTO</h1>
+                <button id="btn">-</button>
+                
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -48,5 +52,13 @@
     <footer>
         <P>©2026 Copyright</P>
     </footer>
+    <script>
+        const btn = document.getElementById("btn")
+        const nav = document.querySelector("nav>ul")
+        btn.addEventListener("click",()=>{
+            nav.classList.toggle("visible")
+        })
+        
+    </script>
 </body>
 </html>
